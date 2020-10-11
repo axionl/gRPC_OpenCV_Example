@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package IPCProto;
+
+message MatRequest {
+  int32 rows = 1;
+  int32 cols = 2;
+  int32 flag = 3;
+  bytes data = 5;
+}
+
+message MatReply {
+  string code = 1;
+  int32 count = 2;
+}
+
+service Greeter {
+  rpc SendImg (MatRequest) returns (MatReply) {}
+}

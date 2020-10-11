@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+*_client
+*_server
+
+# IDE
+.idea
+
+# Cmake build path
+cmake-build-debug
